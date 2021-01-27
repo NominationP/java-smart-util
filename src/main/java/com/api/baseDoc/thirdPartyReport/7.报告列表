@@ -1,0 +1,109 @@
+## <a name="7" />7. 报告列表
+
+### URL
+
+POST `/prd/thirdMonitor`
+
+### 详细描述
+
+1. 显示报告列表(目前没有共享人字段)
+2. 提供搜索功能
+
+```
+?searchStr=奥迪&pageNum=1&pageSize=10
+
+
+```
+{
+    "resultCode": 10000,
+    "resultMessage": "操作成功",
+    "pageInfo": {
+        "pageNum": 1,
+        "pageSize": 2,
+        "totalSize": 12,
+        "totalPages": 6
+    },
+    "items": {
+        "countCheckStateReport": 0,
+        "countStampStateReport": 0,
+        "countAllReport": 5,
+        "reports": [
+            {
+                "id": 49,
+                "contractNo": "A10-BJ-18041-2",
+                "publishType": {
+                    "code": 3,
+                    "name": "合同外非必播"
+                },
+                "superviseBrandCode": "145477",
+                "superviseBrandName": "西安SKP",
+                "brandName": "西安SKP",
+                "saleCity": "西安,兰州",
+                "mediaType": {
+                    "code": 3,
+                    "name": "LCD"
+                },
+                "standardBeginDate": "2019-01-21",
+                "standardEndDate": "2019-01-27",
+                "remark": "",
+                "markType": {
+                    "code": 3,
+                    "name": "逾期"
+                },
+                "createdAt": "2021-01-26 11:01:36",
+                "updatedAt": "2021-01-26 11:01:36",
+                "operatorId": "E0013951",
+                "operatorName": "张泽翔",
+                "reportStates": [
+                    {
+                        "id": 0,
+                        "reportId": 0,
+                        "state": {
+                            "code": 1,
+                            "name": "初始状态"
+                        }
+                    }
+                ],
+                "newFlagStr": "new"
+            },
+            {
+                "id": 48,
+                "contractNo": "A10-BJ-18041-2",
+                "publishType": {
+                    "code": 3,
+                    "name": "合同外非必播"
+                },
+                "superviseBrandCode": "145477",
+                "superviseBrandName": "西安SKP",
+                "brandName": "西安SKP",
+                "saleCity": "西安,兰州",
+                "mediaType": {
+                    "code": 3,
+                    "name": "LCD"
+                },
+                "standardBeginDate": "2019-01-21",
+                "standardEndDate": "2019-01-27",
+                "remark": "",
+                "markType": {
+                    "code": 3,
+                    "name": "逾期"
+                },
+                "createdAt": "2021-01-26 07:01:42",
+                "updatedAt": "2021-01-26 07:01:42",
+                "operatorId": "E0013951",
+                "operatorName": "张泽翔",
+                "reportStates": [
+                    {
+                        "id": 0,
+                        "reportId": 0,
+                        "state": {
+                            "code": 1,
+                            "name": "初始状态"
+                        }
+                    }
+                ],
+                "newFlagStr": "new"
+            }
+        ]
+    }
+}

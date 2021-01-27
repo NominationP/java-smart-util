@@ -1,0 +1,30 @@
+## <a name="2"></a>2. 获取合同发布期
+
+### URL
+
+POST  `/prd/fcom/contractPublicDate`
+
+### 详细描述
+
+1. 根据合同号判断合同类型
+2. 根据合同类型和媒体类型获取合并合同发布期
+
+```
+{
+    "contractNo": "A10-BJ-18041-1",
+    "mediaType": {
+        "code": 3,
+        "name": "LCD"
+    }
+}
+
+
+```
+{
+    "resultCode": 10000,
+    "resultMessage": "",
+    "items": {
+        "beginDate": "2018-05-28",
+        "endDate": "2018-12-23"
+    }
+}

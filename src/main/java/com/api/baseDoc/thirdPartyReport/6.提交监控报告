@@ -1,0 +1,91 @@
+## <a name="6" />6. 提交监控报告
+
+### URL
+
+POST `/prd/thirdMonitor/submitReport`
+
+### 详细描述
+
+1. 保存监控报告到数据库
+2. 把报告信息提交给ctr / 进行审核（待做）
+
+```
+{
+  "reports":[
+        {
+            "id": 0,
+            "contractNo": "A10-BJ-18041-2",
+            "publishType": {
+                "code": 3,
+                "name": "合同外非必播"
+            },
+            "superviseBrandCode": "145477",
+            "superviseBrandName": "西安SKP",
+            "brandName": "西安SKP",
+            "saleCity": "西安,兰州",
+            "mediaType": {
+                "code": 3,
+                "name": "LCD"
+            },
+            "standardBeginDate": "2019-01-21",
+            "standardEndDate": "2019-01-27",
+            "remark": "",
+            "markType": {
+                "code": 3
+            },
+            "publishDetails": [
+                {
+                    "id": 0,
+                    "reportId": 0,
+                    "contractNo": "A10-BJ-18041-2",
+                    "publishId": 1740550,
+                    "publishType": {
+                        "code": 264,
+                        "name": "空位发布"
+                    },
+                    "superviseBrandCode": "145477",
+                    "superviseBrandName": "西安SKP",
+                    "fcsCityId": "610100000000",
+                    "fcsCityName": "西安",
+                    "standardBeginDate": "2019-01-21",
+                    "standardEndDate": "2019-01-27",
+                    "timeLength": 15,
+                    "freq": "60",
+                    "quantity": "1.0",
+                    "productTypeCode": "A2HDP",
+                    "productTypeName": "A2(互动屏广告)",
+                    "buildingRate": "1.000000"
+                },
+                {
+                    "id": 0,
+                    "reportId": 0,
+                    "contractNo": "A10-BJ-18041-2",
+                    "publishId": 0,
+                    "publishType": {
+                        "code": 264,
+                        "name": "空位发布"
+                    },
+                    "superviseBrandCode": "145477",
+                    "superviseBrandName": "西安SKP",
+                    "fcsCityId": "620100000000",
+                    "fcsCityName": "兰州",
+                    "standardBeginDate": "2019-01-21",
+                    "standardEndDate": "2019-01-27",
+                    "timeLength": 15,
+                    "freq": "60",
+                    "quantity": "1.0",
+                    "productTypeCode": "A1HDP",
+                    "productTypeName": "A1(互动屏广告)",
+                    "buildingRate": "1.000000"
+                }
+            ]
+        }
+    ]
+}
+
+```
+{
+    "resultCode": 10000,
+    "resultMessage": "操作成功",
+    "items": ""
+}

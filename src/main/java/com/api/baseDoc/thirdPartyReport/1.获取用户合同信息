@@ -1,0 +1,82 @@
+## <a name="1"></a>1. 获取用户合同信息
+
+### URL
+
+ GET `/prd/fcom/contractInfo`
+
+### 详细描述
+
+1. 根据用户名获取合同号等信息
+2. 根据合同号获取相关信息
+
+```
+?contractNo=XLS-T9-210005
+
+```
+{
+    "resultCode": 10000,
+    "resultMessage": "操作成功",
+    "items": {
+        "mediaType": [
+            {
+                "code": 0,
+                "name": "KJ1030"
+            },
+            {
+                "code": 1,
+                "name": "智能屏单点"
+            },
+            {
+                "code": 2,
+                "name": "智能屏散点"
+            },
+            {
+                "code": 3,
+                "name": "LCD"
+            },
+            {
+                "code": 4,
+                "name": "KJ10"
+            },
+            {
+                "code": 5,
+                "name": "KJ30"
+            },
+            {
+                "code": 6,
+                "name": "智能屏"
+            }
+        ],
+        "publishType": [
+            {
+                "code": 262,
+                "name": "合同内"
+            },
+            {
+                "code": 263,
+                "name": "特赠"
+            },
+            {
+                "code": 264,
+                "name": "空位发布"
+            },
+            {
+                "code": 265,
+                "name": "配赠申请"
+            },
+            {
+                "code": 266,
+                "name": "客户楼必播"
+            },
+            {
+                "code": 16,
+                "name": "补偿发布"
+            }
+        ],
+        "dataModel": [
+            {
+                "contractNo": "XLS-T9-210005"
+            }
+        ]
+    }
+}
