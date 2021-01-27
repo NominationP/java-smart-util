@@ -2,7 +2,6 @@ package com.api.baseDoc;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.HashSet;
 
 public class CommonParams {
     public static ArrayList<String> notRequired = new ArrayList<String>() {{

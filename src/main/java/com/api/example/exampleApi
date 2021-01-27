@@ -1,0 +1,36 @@
+## <a name="1"></a>1. 获取用户信息
+
+### URL
+
+ GET `/getUser`
+
+### 详细描述
+
+1. 获取用户详情
+
+```
+?birthday=2020
+
+```
+{
+    "resultCode": 10000,
+    "resultMessage": "操作成功",
+    "items": {
+        "teachers": [
+
+            {
+                "code": 266,
+                "name": "王老师"
+            },
+            {
+                "code": 16,
+                "name": "张老师"
+            }
+        ],
+        "birthday": [
+            {
+                "year": "2020"
+            }
+        ]
+    }
+}

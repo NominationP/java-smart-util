@@ -1,5 +1,6 @@
 package com.api;
 
+import com.api.baseDoc.CommonParams;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -19,8 +20,13 @@ import static com.api.baseDoc.CommonParams.notRequired;
 
 public class JsonToApiDoc {
 
+    private static HashMap<String, String> intros = CommonParams.intros;
+    private static ArrayList<String> notRequired = CommonParams.notRequired;
+
 
     public static void main(String[] args) throws IOException {
+
+
 
         JsonToApiDoc jsonToApiDoc = new JsonToApiDoc();
 
@@ -53,7 +59,7 @@ public class JsonToApiDoc {
     }
 
 
-    private void generateAPi(String s) {
+    public void generateAPi(String s) {
 
         String[] split = s.split("```");
         String pre = split[0].trim();
